@@ -31,7 +31,7 @@ function App() {
 
     const fetchTasks = async (email) => {
         try {
-            const response = await axios.get(`http://localhost:4000/api/tasks/${email}`);
+            const response = await axios.get(`https://mern-todo-back-wdqp.onrender.com`);
             setTasks(response.data);
         } catch (error) {
             console.error("Error fetching tasks:", error);
